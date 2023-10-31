@@ -29,7 +29,7 @@ header {
 }
 .icontext {
 	text-align:		right;
-	line-height:	50px;
+	line-height:	48px;
 	margin-right:   15px;
 	
 	color: 			#D4B8F2;
@@ -40,20 +40,44 @@ header {
 }
 /*	User information section	*/
 #userInfo {
-	height: 			150px;
-	background-color: 	#D4B8F2;
+	height: 			200px;
+	background-color: 	#aa00aa;
 }
 .horzsect {
-	height: 		100%;
-	width: 			50%;
-	display: 		inline-block;
+	height: 	100%;
+	width: 		50%;
+	display: 	inline-block;
 }
 #siteInfo {
-	background-color: 	#FF0000;
+	background-color: 	#1D0933;
 	margin-right: 		-4px;
+	position: 			relative;
+	
+	box-sizing: 		border-box;
+	border-top: 		#D4B8F2 10px solid;
+	border-bottom: 		#D4B8F2 10px solid;
+	border-right: 		#D4B8F2 10px solid;
+	border-left: 		#D4B8F2 10px solid;
 }
+#descHeader {
+	color: 			#D4B8F2;
+	position: 		absolute;
+	
+	margin-top: 	30px;
+	margin-left: 	25%;
+}
+.descBody {
+	position:   	absolute;
+	color: 			#D4B8F2;
+	
+	margin-top: 	75px;
+	margin-left: 	15%;
+}
+#line1 {padding-top: 0px;}
+#line2 {padding-top: 20px;}
+#line3 {padding-top: 40px;}
 #playlistSpecs {
-	background-color: 	#00FF00;
+	background-color: 	#D4B8F2;
 	margin-left: 		-5px;
 }
 
