@@ -48,6 +48,7 @@ header {
 	width: 		50%;
 	display: 	inline-block;
 }
+
 #siteInfo {
 	background-color: 	#1D0933;
 	margin-right: 		-4px;
@@ -76,10 +77,50 @@ header {
 #line1 {padding-top: 0px;}
 #line2 {padding-top: 20px;}
 #line3 {padding-top: 40px;}
+
 #playlistSpecs {
 	background-color: 	#D4B8F2;
 	margin-left: 		-5px;
+	
+	position: 			relative;
 }
+#PlaylistStatForm {
+	position: 		absolute;
+	margin-top: 	60px;
+	margin-left: 	30px;
+}
+#URLInput {
+	width: 	400px;
+}
+#submit {
+	width: 				65px;
+	background-color: 	#1D0933;
+	color: 				#D4B8F2;
+}
+#submit:hover {
+	width: 				65px;
+	background-color: 	#430487;
+	color: 				#EECCFF;
+}
+#submit:active {
+	width: 				65px;
+	background-color: 	#EECCFF;
+	color: 				#430487;
+}
+.formCol {
+	display: 	inline-block;
+	margin-top: 25px;
+}
+#col1 {
+	margin-right: 	60px;
+}
+#col2 {
+	margin-right: 	60px;
+}
+.topRow {
+	margin-bottom: 	10px;
+}
+
 
 /* 	Playlist output section 	*/
 #songOutput {
