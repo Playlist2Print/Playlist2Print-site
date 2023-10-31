@@ -38,7 +38,30 @@
 		</section>
 		<!-- Take information on the user's desired information -->
 		<section class="horzsect" id="playlistSpecs">
-		
+			<form id="PlaylistStatForm">
+				<section class="topbar">
+					<input type="text" placeholder="Playlist URL Here" id="URLInput">
+					<button id="submit">Textify!</button>
+				</section>
+				<section class="formCol" id="col1">
+					<input type="checkbox" class="topRow" id="artist">
+					<label for="artist">Artist</label><br>
+					<input type="checkbox" class="bottomRow" id="disk">
+					<label for="disk">Disk #</label>
+				</section>
+				<section class="formCol" id="col2">
+					<input type="checkbox" class="topRow" id="album">
+					<label for="album">Album</label><br>
+					<input type="checkbox" class="bottomRow" id="track">
+					<label for="track">Track #</label>
+				</section>
+				<section class="formCol" id="col3">
+					<input type="checkbox" class="topRow" id="length">
+					<label for="length">Length</label><br>
+					<input type="checkbox" class="bottomRow" id="explicit">
+					<label for="explicit">Explicit</label>
+				</section>
+			</form>
 		</section>
 	</section>
 		
