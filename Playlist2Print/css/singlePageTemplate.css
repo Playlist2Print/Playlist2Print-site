@@ -36,7 +36,8 @@ header {
 }
 
 .vertsect {
-	width: 100%;
+	width: 		100%;
+	display: 	flex;
 }
 /*	User information section	*/
 #userInfo {
@@ -49,10 +50,14 @@ header {
 	display: 	inline-block;
 }
 
+/*	Playlist information form 	*/
 #siteInfo {
 	background-color: 	#1D0933;
-	margin-right: 		-4px;
+	margin-right: 		0px;
 	position: 			relative;
+	
+	display: 			flex;
+	justify-content: 	center;
 	
 	box-sizing: 		border-box;
 	border-top: 		#D4B8F2 10px solid;
@@ -61,33 +66,33 @@ header {
 	border-left: 		#D4B8F2 10px solid;
 }
 #descHeader {
-	color: 			#D4B8F2;
-	position: 		absolute;
+	color: 				#D4B8F2;
+	position: 			absolute;
 	
 	margin-top: 	30px;
-	margin-left: 	25%;
+}
+.descHolder {
+	position: 	absolute;
+	margin-top: 60px;
 }
 .descBody {
-	position:   	absolute;
+	position:   	relative;
 	color: 			#D4B8F2;
-	
-	margin-top: 	75px;
-	margin-left: 	15%;
 }
-#line1 {padding-top: 0px;}
-#line2 {padding-top: 20px;}
-#line3 {padding-top: 40px;}
+#line2 {margin-top: -15px;}
+#line3 {margin-top: -15px;}
 
 #playlistSpecs {
 	background-color: 	#D4B8F2;
-	margin-left: 		-5px;
+	margin-left: 		0px;
 	
 	position: 			relative;
+	display: 			flex;
+	justify-content: 	center;
 }
 #PlaylistStatForm {
 	position: 		absolute;
 	margin-top: 	60px;
-	margin-left: 	30px;
 }
 #URLInput {
 	width: 	400px;
