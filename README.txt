@@ -1,4 +1,4 @@
-To display the site, go to the button labeled '<code>' and click.
+To display the site, go to the button labeled either '<code>' or 'Code' and click.
 In the dropdown menu, click 'download zip'.
 Enter the downloaded file and open the HTML document in your browser.
 
