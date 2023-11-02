@@ -3,68 +3,70 @@
 @media (min-width: 1025px) and (max-width: 10000px) {
 	body {
 		font-family: monospace, "Monaco";
-		font: normal;
-		font-style: normal;
+		font:        normal;
+		font-style:  normal;
 		font-weight: 200;
 	
-		margin-top: 0px;
-		margin-right: 0px;
+		margin-top:    0px;
+		margin-right:  0px;
 		margin-bottom: 0px;
-		margin-left: 0px;
+		margin-left:   0px;
 	
 		background-color: #1D0933;
 	}
 	.container {
-		width: 90%;
-		margin-left: auto;
+		width:        90%;
+		margin-left:  auto;
 		margin-right: auto;
+		
 		background-color: #FFFFFF;
 	}
 
 	/*	Header and footer text	*/
 	header {
-		width:			100%;
-		height:			50px;
+		width:  100%;
+		height: 50px;
 	
-		background-color:	#1D0933;
+		background-color: #1D0933;
 	}
 	.icontext {
-		text-align:	right;
-		line-height:	48px;
-		margin-right:   15px;
+		text-align:   right;
+		line-height:  48px;
+		margin-right: 15px;
 	
-		color: 		#D4B8F2;
+		color: #D4B8F2;
 	}
-
 	.vertsect {
-		width: 		100%;
-		display:	flex;
+		width: 	 100%;
+		display: flex;
 	}
+	
 	/*	User information section	*/
 	#userInfo {
-		height: 		200px;
-		background-color: 	#aa00aa;
+		height: 200px;
+		
+		background-color: #aa00aa;
 	}
 	.horzsect {
-		height: 	100%;
-		width: 		50%;
-		display: 	inline-block;
+		height:  100%;
+		width: 	 50%;
+		display: inline-block;
 	}
 
 	/*	Playlist information form 	*/
 	#siteInfo {
-		background-color: 	#1D0933;
-		margin-right: 		0px;
-		position: 		relative;
+		background-color: #1D0933;
+		margin-right: 	  0px;
+		position: 	  relative;
 	
-		display:		flex;
-		justify-content: 	center;
+		display:	 flex;
+		justify-content: center;
 	
-		box-sizing: 		border-box;
-		border-top: 		#D4B8F2 10px solid;
-		border-bottom: 		#D4B8F2 10px solid;
-		border-right: 		#D4B8F2 10px solid;
-		border-left: 		#D4B8F2 10px solid;
+		box-sizing: 	border-box;
+		border-top: 	#D4B8F2 10px solid;
+		border-bottom: 	#D4B8F2 10px solid;
+		border-right: 	#D4B8F2 10px solid;
+		border-left: 	#D4B8F2 10px solid;
 	}
 	#descHeader {
 		color: 		#D4B8F2;
