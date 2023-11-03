@@ -200,7 +200,7 @@
 		margin-right: 0px;
 		position:     relative;
 		
-		display: 	     flex;
+		display:         flex;
 		justify-content: center;
 			
 		background-color: #1D0933;
@@ -280,18 +280,18 @@
 @media (min-width: 690px) and (max-width: 880px) {
 	/* Body */
 	body {
-	font-family: monospace, "Monaco";
-	font:        normal;
-	font-style:  normal;
-	font-weight: 200;
-	
-	margin-top:    0px;
-	margin-bottom: 0px;
-	margin-left:   0px;
-	margin-right:  0px;
-	
-	background-color: #1D0933;
-}
+		font-family: monospace, "Monaco";
+		font:        normal;
+		font-style:  normal;
+		font-weight: 200;
+		
+		margin-top:    0px;
+		margin-bottom: 0px;
+		margin-left:   0px;
+		margin-right:  0px;
+		
+		background-color: #1D0933;
+	}
 	.container {
 		width:        90%;
 		margin-left:  auto;
