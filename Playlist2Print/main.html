@@ -56,8 +56,8 @@
 
 			    <!-- Input bar and submit button -->
     			<section class="topbar" id="textButtonRow">
-        			<input  id="URLInput" placeholder="Playlist URL here" type="url">
-        			<button id="submit" onclick="getInfo();">Submit</button>
+        			<input id="URLInput" placeholder="Playlist URL here" type="url">
+        			<button id="submit" onclick="getInfo();" type="button">Submit</button>
     			</section>
 
 				<!-- Attribute buttons -->
@@ -85,7 +85,10 @@
 			</form>
 			
 			<script>
+				
 				function getInfo() {
+					var text = "";
+					
 					var playlistURL = document.getElementById("URLInput").value;
 					var getArtist   = document.getElementById("artist").checked;
 					var getAlbum    = document.getElementById("album").checked;
@@ -94,18 +97,50 @@
 					var getTrackNum = document.getElementById("track").checked;
 					var getExplicit = document.getElementById("explicit").checked;
 					
-					var text = "";
-					text += playlistURL + "\n";
+					var playlistName = "";
+					var creator = "";
+					var totLen_seconds = 0;
+					if (playlistURL == "https://open.spotify.com/playlist/1yvyZD1Pre71wLHbPMZOpz") {
+						playlistName   = "TDH Week 5";
+						creator        = "B";
+						totLen_seconds = 7689;
+					} else if (playlistURL == "https://github.com/Asmoranomardicadaistinaculdicar/Playlist2Print-site") {
+						playlistName   = "Radiohead tries to do Math"
+						creator        = "four-caddit";
+						totLen_seconds = 480;
+					};
 					
-					text += "Artist: "   + getArtist   + "\n";
-					text += "Album: "    + getAlbum    + "\n";
-					text += "Length: "   + getLength   + "\n";
-					text += "Disk #: "   + getDiskNum  + "\n";
-					text += "Track #: "  + getTrackNum + "\n";
-					text += "Explicit: " + getExplicit + "\n";
+					var len_seconds = 0;
+					var len_minutes = 0;
+					var len_hours   = 0;
+					var lenString   = "";
 					
-       				alert(text);
-    			}           
+					if (totLen_seconds > 60) {
+						len_minutes = Math.floor(totLen_seconds / 60);
+						len_seconds = totLen_seconds % 60;
+					};
+					if (len_minutes > 60) {
+						len_hours   = Math.floor(len_minutes / 60);
+						len_minutes = len_minutes % 60;
+					};
+
+					if (len_hours < 10) {
+						lenString += "0";
+					}
+					lenString += len_hours;
+					lenString += ":";
+					if (len_minutes < 10) {
+						lenString += "0";
+					};
+					lenString += len_minutes;
+					lenString += ":";
+					if (len_seconds < 10) {
+						lenString += "0";
+					};
+					lenString += len_seconds;
+					document.getElementById("outputHeader").innerHTML = playlistName + " by " + creator + ", length: " + lenString + "<br>";
+    			};
+				
 			</script>
 			
 		</section>
@@ -114,6 +149,10 @@
 		
 	<!-- Output information (Plaintext readout, downloadable files) -->
 	<section class="vertsect" id="songOutput">
+		
+		<section class="docFormat" id="outputHead">
+			<p id="outputHeader"></p>
+		</section>
 		
 	</section>
 	
