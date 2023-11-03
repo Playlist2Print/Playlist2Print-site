@@ -1,0 +1,905 @@
+@charset "UTF-8";
+
+@media (min-width: 1120px) and (max-width: 10000px) {
+	/* Body */
+	body {
+		margin-top:    0px;
+		margin-bottom: 0px;
+		margin-left:   0px;
+		margin-right:  0px;
+		
+		font-family: monospace, "Monaco";
+		font:        normal;
+		font-style:  normal;
+		font-weight: 200;
+	
+		background-color: #1D0933;
+	}
+	.container {
+		width:        90%;
+		margin-left:  auto;
+		margin-right: auto;
+		
+		background-color: #FFFFFF;
+	}
+
+	/* Header and Footer Text */
+	header {
+		height: 50px;
+		width:  100%;
+	
+		background-color: #1D0933;
+	}
+	.icontext {
+		margin-right: 15px;
+		
+		text-align:  right;
+		line-height: 48px;
+	
+		color: #D4B8F2;
+	}
+
+	.vertsect {
+		width: 100%;
+		
+		display: flex;
+	}
+	
+	/* User Information Section */
+	#userInfo {
+		height: 200px;
+		
+		background-color: #aa00aa;
+	}
+	.horzsect {
+		height: 100%;
+		width:  50%;
+		
+		display: inline-block;
+	}
+
+	#siteInfo {
+		margin-right: 0px;
+		position:     relative;
+		
+		display:         flex; 
+		justify-content: center;
+		box-sizing:      border-box;
+		
+		background-color: #1D0933;
+		
+		border-top:    #D4B8F2 10px solid;
+		border-bottom: #D4B8F2 10px solid;
+		border-right:  #D4B8F2 10px solid;
+		border-left:   #D4B8F2 10px solid;
+	}
+	#descHeader {
+		margin-top: 30px;
+		position: absolute;
+		
+		color: #D4B8F2;
+	}
+	.descHolder {
+		margin-top: 60px;
+		position:   absolute;
+	}
+	.descBody {
+		position: relative;
+		
+		color: #D4B8F2;
+	}
+	#line2 {margin-top: -15px;}
+	#line3 {margin-top: -15px;}
+	
+	/* Playlist information form */
+	#playlistSpecs {
+		margin-left: 0px;
+		position:    relative;
+		
+		background-color: #D4B8F2;
+		
+		display:         flex;
+		justify-content: center;
+	}
+	#PlaylistStatForm {
+		width:      90%;
+		margin-top: 30px;
+		position:   absolute;
+	}
+	#URLInput {width: 80%;}
+	#submit {
+		width: 65px;
+		
+		background-color: #1D0933;
+		color:            #D4B8F2;
+	}
+	#submit:hover {
+		width: 65px;
+		
+		background-color: #430487;
+		color:            #EECCFF;
+	}
+	#submit:active {
+		width: 65px;
+		
+		background-color: #EECCFF;
+		color:            #430487;
+	}
+	.singleWordHolder {
+		margin-top: 20px;
+	}
+	.formCol {
+		margin-top: -15px;
+		
+		display: inline-block;
+		
+		color: #1D0933;
+	}
+	#col1 {margin-right: 12%;}
+	#col2 {margin-right: 12%;}
+	.topRow {margin-bottom: 10px;}
+	.dropdown {
+		margin-top: 5px;
+		position:   absolute;
+	}
+	#sortText {
+		position: relative;
+		
+		display: inline-block;
+		
+		color: #000000;
+	}
+	#sortMenu {
+		width:    100px;
+		position: relative;
+		
+		display: inline-block;
+	}
+
+	/* Playlist Output Section */
+	#songOutput {}
+	.docFormat {}
+}
+
+@media (min-width: 940px) and (max-width: 1120px) {
+	/* Body */
+	body {
+		font-family: monospace, "Monaco";
+		font:        normal;
+		font-style:  normal;
+		font-weight: 200;
+		
+		margin-top:    0px;
+		margin-bottom: 0px;
+		margin-left:   0px;
+		margin-right:  0px;
+	
+		background-color: #1D0933;
+	}
+	.container {
+		width:        90%;
+		margin-left:  auto;
+		margin-right: auto;
+		
+		background-color: #FFFFFF;
+	}
+	
+	/* Header and Footer Text */
+	header {
+		height:	50px;
+		width:  100%;
+	
+		background-color: #1D0933;
+	}
+	.icontext {
+		margin-right: 15px;
+		
+		text-align:  right;
+		line-height: 48px;
+		
+		color: #D4B8F2;
+	}
+
+	.vertsect {
+		width: 100%;
+		
+		display: flex;
+	}
+	/* User Tnformation Section	*/
+	#userInfo {
+		height: 200px;
+		
+		background-color: #aa00aa;
+	}
+	.horzsect {
+		height: 100%;
+		width:  50%;
+		
+		display: inline-block;
+	}
+	
+	#siteInfo {
+		margin-right: 0px;
+		position:     relative;
+		
+		display:         flex;
+		justify-content: center;
+			
+		background-color: #1D0933;
+	
+		box-sizing:    border-box;
+		border-top:    #D4B8F2 10px solid;
+		border-bottom: #D4B8F2 10px solid;
+		border-left:   #D4B8F2 10px solid;
+		border-right:  #D4B8F2 10px solid;
+	}
+	#descHeader {
+		margin-top: 30px;
+		position:   absolute;
+	
+		color: #D4B8F2;
+	}
+	.descHolder {
+		margin-top: 60px;
+		position:   absolute;
+	}
+	.descBody {
+		position: relative;
+			
+		color: #D4B8F2;
+	}
+	#line2 {margin-top: -15px;}
+	#line3 {margin-top: -15px;}
+	
+	/* Playlist Information Form */
+	#playlistSpecs {
+		margin-left: 0px;
+		position:    relative;
+		
+		display:         flex;
+		justify-content: center;
+		
+		background-color: #D4B8F2;
+	}
+	#PlaylistStatForm {
+		width:      90%;
+		margin-top: 30px;
+		position:   absolute;
+	}
+	#URLInput {width: 75%;}
+	#submit {
+		width: 65px;
+		
+		background-color: #1D0933;
+		color:            #D4B8F2;
+	}
+	#submit:hover {
+		width: 65px;
+		
+		background-color: #430487;
+		color: #EECCFF;
+	}
+	#submit:active {
+		width: 65px;
+		
+		background-color: #EECCFF;
+		color:            #430487;
+	}
+	.formCol {
+		margin-top: -15px;
+		
+		display: inline-block;
+	}
+	#col1 {margin-right: 5%;}
+	#col2 {margin-right: 5%;}
+	.topRow {margin-bottom: 10px;}
+	.dropdown {
+		margin-top: 5px;
+		position:   absolute;
+	}
+	#sortText {
+		position: relative;
+		
+		display: inline-block;
+		
+		color: #000000;
+	}
+	#sortMenu {
+		width:    100px;
+		position: relative;
+		
+		display: inline-block;
+	}
+	
+	/* Playlist output section */
+	#songOutput {}
+	.docFormat {}
+}
+
+@media (min-width: 690px) and (max-width: 940px) {
+	/* Body */
+	body {
+		font-family: monospace, "Monaco";
+		font:        normal;
+		font-style:  normal;
+		font-weight: 200;
+		
+		margin-top:    0px;
+		margin-bottom: 0px;
+		margin-left:   0px;
+		margin-right:  0px;
+		
+		background-color: #1D0933;
+	}
+	.container {
+		width:        90%;
+		margin-left:  auto;
+		margin-right: auto;
+		
+		background-color: #FFFFFF;
+	}
+	
+	/* Header and Footer Text */
+	header {
+		width:  100%;
+		height: 50px;
+	
+		background-color: #1D0933;
+	}
+	.icontext {
+		margin-right: 15px;
+		
+		text-align:  right;
+		line-height: 48px;
+		
+		color: #D4B8F2;
+	}
+
+	.vertsect {
+		width:   100%;
+		display: block;
+	}
+	/*	User Information Section	*/
+	#userInfo {
+		height: 200px;
+		
+		background-color: #aa00aa;
+	}
+	.horzsect {
+		height:  100%;
+		width:   100%;
+		display: inline-block;
+	}
+	
+	#siteInfo {
+		margin-right: 0px;
+		position:     relative;
+		
+		display:         flex;
+		justify-content: center;
+		
+		background-color: #1D0933;
+	
+		box-sizing:    border-box;
+		border-top:    #D4B8F2 10px solid;
+		border-bottom: #D4B8F2 10px solid;
+		border-right:  #D4B8F2 10px solid;
+		border-left:   #D4B8F2 10px solid;
+	}
+	#descHeader {
+		margin-top: 30px;	
+		position:   absolute;
+		
+		color: #D4B8F2;
+	}
+	.descHolder {
+		margin-top: 60px;
+		position:   absolute;
+	}
+	.descBody {
+		position: relative;
+		
+		color: #D4B8F2;
+	}
+	#line2 {margin-top: -15px;}
+	#line3 {margin-top: -15px;}
+	
+	/* Playlist Information Section */
+	#playlistSpecs {
+		height:      150px;
+		margin-left: 0px;
+		position:    relative;
+	
+		display:         flex;
+		justify-content: center;
+		
+		background-color: #D4B8F2;
+}
+	#PlaylistStatForm {
+		width: 		90%;
+		margin-top: 10px;
+		position:   absolute;
+	}
+	#URLInput {width: 85%;}
+	#submit {
+		width: 65px;
+		
+		background-color: #1D0933;
+		color:            #D4B8F2;
+	}
+	#submit:hover {
+		width: 65px;
+		
+		background-color: #430487;
+		color:            #EECCFF;
+	}
+	#submit:active {
+		width: 65px;
+		
+		background-color: #EECCFF;
+		color:            #430487;
+	}
+	.formCol {
+		margin-top: -15px;
+		display:    inline-block;
+	}
+	#col1 {margin-right: 10%;}
+	#col2 {margin-right: 10%;}
+	.topRow {margin-bottom: 5px;}
+	.dropdown {
+		margin-top: -5px;
+		position:   absolute;
+	}
+	#sortText {
+		position: relative;
+		
+		display: inline-block;
+		
+		color: #000000;
+	}
+	#sortMenu {
+		width:    100px;
+		position: relative;
+		
+		display: inline-block;
+	}
+	
+	/* Playlist Output Section */
+	#songOutput {}
+	.docFormat {}
+}
+
+@media (min-width: 540px) and (max-width: 690px) {
+	/* Body */
+	body {
+		font-family: monospace, "Monaco";
+		font:        normal;
+		font-style:  normal;
+		font-weight: 200;
+	
+		margin-top:    0px;
+		margin-bottom: 0px;
+		margin-left:   0px;
+		marign-right:  0px;
+	
+		background-color: #1D0933;
+	}
+	.container {
+		width:        90%;
+		margin-left:  auto;
+		margin-right: auto;
+		
+		background-color: #FFFFFF;
+	}
+	
+	/* Header and Footer Text */
+	header {
+		height: 50px;
+		width:  100%;
+	
+		background-color: #1D0933;
+	}
+	.icontext {
+		margin-right: 15px;
+		
+		text-align:  right;
+		line-height: 48px;
+		
+		color: #D4B8F2;
+	}
+
+	.vertsect {
+		width: 100%;
+		
+		display: block;
+	}
+	/* User Information Section	*/
+	#userInfo {
+		height: 200px;
+		
+		background-color: #aa00aa;
+	}
+	.horzsect {
+		height: 100%;
+		width:  100%;
+		
+		display: inline-block;
+	}
+	
+	/* Playlist Information Form */
+	#siteInfo {
+		margin-right: 0px;
+		position: relative;
+		
+		display:         flex;
+		justify-content: center;
+		
+		background-color: #1D0933;
+	
+		box-sizing:    border-box;
+		border-top:    #D4B8F2 10px solid;
+		border-bottom: #D4B8F2 10px solid;
+		border-right:  #D4B8F2 10px solid;
+		border-left:   #D4B8F2 10px solid;
+	}
+	#descHeader {
+		margin-top: 30px;
+		position:   absolute;
+		
+		color: #D4B8F2;
+	}
+	.descHolder {
+		margin-top: 60px;
+		position:   absolute;
+	}
+	.descBody {
+		position: relative;
+		
+		color: #D4B8F2;
+	}
+	#line2 {margin-top: -15px;}
+	#line3 {margin-top: -15px;}
+	
+	#playlistSpecs {
+		height:      160px;
+		margin-left: 0px;
+		position:    relative;
+			
+		display:         flex;
+		justify-content: center;
+
+		background-color: #D4B8F2;
+	}
+	#PlaylistStatForm {
+		width:      70%;
+		margin-top: 10px;
+		position:   absolute;
+		
+	}
+	#URLInput {width: 75%;}
+	#submit {
+		width: 65px;
+		
+		background-color: #1D0933;
+		color:            #D4B8F2;
+	}
+	#submit:hover {
+		width: 65px;
+		
+		background-color: #430487;
+		color:            #EECCFF;
+	}
+	#submit:active {
+		width: 65px;
+		
+		background-color: #EECCFF;
+		color:            #430487;
+	}
+	.formCol {
+		margin-top: -15px;
+
+		display: inline-block;
+	}
+	#col1 {margin-right: 5%;}
+	#col2 {margin-right: 5%;}
+	.topRow {margin-bottom: 10px;}
+	.dropdown {
+		margin-top: -3px;
+		position:   absolute;
+	}
+	#sortText {
+		position: relative;
+		
+		display: inline-block;
+		
+		color: #000000;
+	}
+	#sortMenu {
+		width:    100px;
+		position: relative;
+		
+		display: inline-block;
+	}
+	
+	/* Playlist Output Section */
+	#songOutput {}
+	.docFormat {}
+}
+
+@media (min-width: 445px) and (max-width: 540px) {
+	/* Body */
+	body {
+		font-family: monospace, "Monaco";
+		font:        normal;
+		font-style:  normal;
+		font-weight: 200;
+	
+		margin-top:    0px;
+		margin-bottom: 0px;
+		margin-left:   0px;
+		margin-right:  0px;
+		
+		background-color: #1D0933;
+	}
+	.container {
+		width:        90%;
+		margin-left:  auto;
+		margin-right: auto;
+		
+		background-color: #FFFFFF;
+	}
+	
+	/* Header and Footer Text */
+	header {
+		height: 50px;
+		width:  100%;
+	
+		background-color: #1D0933;
+	}
+	.icontext {
+		margin-right: 15px;
+		
+		text-align:  right;
+		line-height: 48px;
+		
+		color: #D4B8F2;
+	}
+
+	.vertsect {
+		width: 100%;
+		
+		display: block;
+	}
+	/*	User Information Section	*/
+	#userInfo {
+		height: 200px;
+		
+		background-color: #aa00aa;
+	}
+	.horzsect {
+		height: 100%;
+		width:  100%;
+		
+		display: inline-block;
+	}
+	
+	/*	Playlist Information Form 	*/
+	#siteInfo {
+		margin-right: 0px;
+		position:     relative;
+		
+		display:         flex;
+		justify-content: center;
+		
+		background-color: #1D0933;
+	
+		box-sizing:    border-box;
+		border-top:    #D4B8F2 10px solid;
+		border-bottom: #D4B8F2 10px solid;
+		border-left:   #D4B8F2 10px solid;
+		border-right:  #D4B8F2 10px solid;
+	}
+	#descHeader {
+		margin-top: 30px;
+		position:   absolute;
+		
+		color: #D4B8F2;
+	}
+	.descHolder {
+		margin-top: 60px;
+		position:   absolute;
+	}
+	.descBody {
+		position: relative;
+		
+		color: #D4B8F2;
+	}
+	#line2 {margin-top: -15px;}
+	#line3 {margin-top: -15px;}
+	
+	#playlistSpecs {
+		margin-left: 0px;
+		height:      250px;
+		position:    relative;
+		
+		display:         flex;
+		justify-content: center;
+		
+		background-color: #D4B8F2;
+	}
+	#PlaylistStatForm {
+		width:      70%;
+		margin-top: 30px;
+		position:   absolute;
+	}
+	#URLInput {width: 65%;}
+	#submit {
+		width: 65px;
+		
+		background-color: #1D0933;
+		color:            #D4B8F2;
+	}
+	#submit:hover {
+		width: 65px;
+		
+		background-color: #430487;
+		color:            #EECCFF;
+	}
+	#submit:active {
+		width: 65px;
+		
+		background-color: #EECCFF;
+		color:            #430487;
+	}
+	.formCol {
+		margin-top: 8px;
+		display: 	block;
+	}
+	#col1 {margin-right: 5%;}
+	#col2 {margin-right: 5%;}
+	.topRow { margin-bottom: 10px;}
+	
+	/* Playlist Output Section */
+	#songOutput {}
+	.docFormat {}
+}
+
+@media (min-width: 0px) and (max-width: 445px) {
+	/* Body */
+	body {
+		font-family: monospace, "Monaco";
+		font:        normal;
+		font-style:  normal;
+		font-weight: 200;
+		
+		margin-top:    0px;
+		margin-bottom: 0px;
+		margin-left:   0px;
+		margin-right:  0px;
+		
+		background-color: #1D0933;
+	}
+	.container {
+		width:        90%;
+		margin-left:  auto;
+		margin-right: auto;
+			
+		background-color: #FFFFFF;
+	}
+	
+	/* Header and Footer Text */
+	header {
+		height:	50px;
+		width:  100%;
+	
+		background-color: #1D0933;
+	}
+	.icontext {
+		margin-right: 15px;
+		text-align:   right;
+		line-height:  48px;
+		
+		color: #D4B8F2;
+	}
+
+	.vertsect {
+		width: 100%;
+		
+		display: block;
+	}
+	/* User Information Section */
+	#userInfo {
+		height: 200px;
+		
+		background-color: #aa00aa;
+	}
+	.horzsect {
+		height: 100%;
+		width:  100%;
+		
+		display: inline-block;
+	}
+	
+	/* Playlist Information Form */
+	#siteInfo {
+		margin-right: 0px;
+		position:     relative;
+		
+		display:         flex;
+		justify-content: center;
+		
+		background-color: #1D0933;
+	
+		height:        250px;
+		box-sizing:    border-box;
+		border-top:    #D4B8F2 10px solid;
+		border-bottom: #D4B8F2 10px solid;
+		border-right:  #D4B8F2 10px solid;
+		border-left:   #D4B8F2 10px solid;
+	}
+	#descHeader {
+		margin-top: 30px;
+		position:   absolute;
+		
+		color: #D4B8F2;
+	}
+	.descHolder {
+		width:      75%;
+		margin-top: 60px;
+		position:   absolute;
+	}
+	.descBody {
+		position: relative;
+		
+		color: #D4B8F2;
+	}
+	#line2 {margin-top: -15px;}
+	#line3 {margin-top: -15px;}
+	
+	#playlistSpecs {
+		margin-left: 0px;
+		height:      250px;
+		position:    relative;
+		
+		display:         flex;
+		justify-content: center;
+		
+		background-color: #D4B8F2;
+	}
+	#PlaylistStatForm {
+		width:      70%;
+		margin-top: 30px;
+		position:   absolute;
+	}
+	#URLInput {width: 65%;}
+	#submit {
+		width: 65px;
+		
+		background-color: #1D0933;
+		color:            #D4B8F2;
+	}
+	#submit:hover {
+		width: 65px;
+		
+		background-color: #430487;
+		color:            #EECCFF;
+	}
+	#submit:active {
+		width: 65px;
+		
+		background-color: #EECCFF;
+		color:            #430487;
+	}
+	.formCol {
+		margin-top: 8px;
+		
+		display: block;
+	}
+	#col1 {margin-right: 5%;}
+	#col2 {margin-right: 5%;}
+	.topRow {margin-bottom: 10px;}
+	
+	/* Playlist output section */
+	#songOutput {}
+	.docFormat {}
+};
