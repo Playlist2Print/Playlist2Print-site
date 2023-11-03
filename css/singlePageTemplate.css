@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media (min-width: 1025px) and (max-width: 10000px) {
+@media (min-width: 1120px) and (max-width: 10000px) {
 	/* Body */
 	body {
 		margin-top:    0px;
@@ -102,9 +102,9 @@
 		justify-content: center;
 	}
 	#PlaylistStatForm {
-		width: 90%;
-		margin-top: 60px;
-		position: absolute;
+		width:      90%;
+		margin-top: 30px;
+		position:   absolute;
 	}
 	#URLInput {width: 80%;}
 	#submit {
@@ -125,21 +125,43 @@
 		background-color: #EECCFF;
 		color:            #430487;
 	}
+	.singleWordHolder {
+		margin-top: 20px;
+	}
 	.formCol {
-		margin-top: 25px;
+		margin-top: -15px;
 		
 		display: inline-block;
+		
+		color: #1D0933;
 	}
 	#col1 {margin-right: 12%;}
 	#col2 {margin-right: 12%;}
 	.topRow {margin-bottom: 10px;}
+	.dropdown {
+		margin-top: 5px;
+		position:   absolute;
+	}
+	#sortText {
+		position: relative;
+		
+		display: inline-block;
+		
+		color: #000000;
+	}
+	#sortMenu {
+		width:    100px;
+		position: relative;
+		
+		display: inline-block;
+	}
 
 	/* Playlist Output Section */
 	#songOutput {}
 	.docFormat {}
 }
 
-@media (min-width: 880px) and (max-width: 1025px) {
+@media (min-width: 940px) and (max-width: 1120px) {
 	/* Body */
 	body {
 		font-family: monospace, "Monaco";
@@ -241,7 +263,7 @@
 	}
 	#PlaylistStatForm {
 		width:      90%;
-		margin-top: 60px;
+		margin-top: 30px;
 		position:   absolute;
 	}
 	#URLInput {width: 75%;}
@@ -264,20 +286,37 @@
 		color:            #430487;
 	}
 	.formCol {
-		margin-top: 25px;
+		margin-top: -15px;
 		
 		display: inline-block;
 	}
 	#col1 {margin-right: 5%;}
 	#col2 {margin-right: 5%;}
 	.topRow {margin-bottom: 10px;}
+	.dropdown {
+		margin-top: 5px;
+		position:   absolute;
+	}
+	#sortText {
+		position: relative;
+		
+		display: inline-block;
+		
+		color: #000000;
+	}
+	#sortMenu {
+		width:    100px;
+		position: relative;
+		
+		display: inline-block;
+	}
 	
 	/* Playlist output section */
 	#songOutput {}
 	.docFormat {}
 }
 
-@media (min-width: 690px) and (max-width: 880px) {
+@media (min-width: 690px) and (max-width: 940px) {
 	/* Body */
 	body {
 		font-family: monospace, "Monaco";
@@ -378,7 +417,7 @@
 }
 	#PlaylistStatForm {
 		width: 		90%;
-		margin-top: 30px;
+		margin-top: 10px;
 		position:   absolute;
 	}
 	#URLInput {width: 85%;}
@@ -401,12 +440,29 @@
 		color:            #430487;
 	}
 	.formCol {
-		margin-top: 15px;
+		margin-top: -15px;
 		display:    inline-block;
 	}
-	#col1 {margin-right: 15%;}
-	#col2 {margin-right: 5%;}
-	.topRow {margin-bottom: 10px;}
+	#col1 {margin-right: 10%;}
+	#col2 {margin-right: 10%;}
+	.topRow {margin-bottom: 5px;}
+	.dropdown {
+		margin-top: -5px;
+		position:   absolute;
+	}
+	#sortText {
+		position: relative;
+		
+		display: inline-block;
+		
+		color: #000000;
+	}
+	#sortMenu {
+		width:    100px;
+		position: relative;
+		
+		display: inline-block;
+	}
 	
 	/* Playlist Output Section */
 	#songOutput {}
@@ -505,7 +561,7 @@
 	#line3 {margin-top: -15px;}
 	
 	#playlistSpecs {
-		height:      150px;
+		height:      160px;
 		margin-left: 0px;
 		position:    relative;
 			
@@ -516,7 +572,7 @@
 	}
 	#PlaylistStatForm {
 		width:      70%;
-		margin-top: 30px;
+		margin-top: 10px;
 		position:   absolute;
 		
 	}
@@ -540,13 +596,30 @@
 		color:            #430487;
 	}
 	.formCol {
-		margin-top: 15px;
+		margin-top: -15px;
 
 		display: inline-block;
 	}
 	#col1 {margin-right: 5%;}
 	#col2 {margin-right: 5%;}
 	.topRow {margin-bottom: 10px;}
+	.dropdown {
+		margin-top: -3px;
+		position:   absolute;
+	}
+	#sortText {
+		position: relative;
+		
+		display: inline-block;
+		
+		color: #000000;
+	}
+	#sortMenu {
+		width:    100px;
+		position: relative;
+		
+		display: inline-block;
+	}
 	
 	/* Playlist Output Section */
 	#songOutput {}

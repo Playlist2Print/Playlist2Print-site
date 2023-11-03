@@ -57,27 +57,39 @@
         			<input id="URLInput" placeholder="Playlist URL here" type="url">
         			<button id="submit" onclick="getInfo();" type="button">Submit</button>
     			</section>
+				
+				<section class="singleWordHolder">
+					<p id="includeText">Include:</p>
+				</section>
 
 				<!-- Attribute buttons -->
 				<section class="formCol" id="col1">
-					<input type="checkbox" class="topRow" id="artist" checked>
+					<input type="checkbox" class="topRow" id="artist" onclick="updateDropdown()" checked>
 					<label for="artist">Artist</label><br>
-					<input type="checkbox" class="bottomRow" id="disk">
-					<label for="disk">Disk #</label>
+					<input class="bottomRow" id="explicit" type="checkbox" onclick=updateDropdown()>
+					<label for="explicit">Explicit?</label>
 				</section>
 
 				<section class="formCol" id="col2">
-					<input class="topRow" id="album" type="checkbox">
+					<input class="topRow" id="album" type="checkbox" onclick="updateDropdown()">
 					<label for="album">Album</label><br>
-					<input class="bottomRow" id="track" type="checkbox">
+					<input class="bottomRow" id="track" type="checkbox" onclick="updateDropdown()">
 					<label for="track">Track #</label>
 				</section>
 
 				<section class="formCol" id="col3">
-					<input class="topRow" id="length" type="checkbox">
+					<input class="topRow" id="length" type="checkbox" onclick="updateDropdown()">
 					<label for="length">Song Length</label><br>
-					<input class="bottomRow" id="explicit" type="checkbox">
-					<label for="explicit">Explicit?</label>
+					<input type="checkbox" class="bottomRow" id="disk" onclick="updateDropdown()">
+					<label for="disk">Disk #</label>
+				</section>
+				
+				<section class="dropdown" id="sortContainer">
+					<p class="descBody" id="sortText">Sort by:</p>
+					<select class="dropMenu" id="sortMenu">
+						<option value="none">none</option>
+						<option value="Artist">Artist</option>
+					</select>
 				</section>
 
 			</form>
