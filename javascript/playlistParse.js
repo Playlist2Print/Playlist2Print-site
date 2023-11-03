@@ -1,12 +1,6 @@
 function getInfo() {
 	
 	var playlistURL = document.getElementById("URLInput").value;
-	var getArtist   = document.getElementById("artist").checked;
-	var getAlbum    = document.getElementById("album").checked;
-	var getLength   = document.getElementById("length").checked;
-	var getDiskNum  = document.getElementById("disk").checked;
-	var getTrackNum = document.getElementById("track").checked;
-	var getExplicit = document.getElementById("explicit").checked;
 					
 	var playlistName = "";
 	var creator = "";
@@ -52,4 +46,43 @@ function getInfo() {
 	document.getElementById("outputHeader").innerHTML = playlistName + " by " + creator + ", length: " + lenString + "<br>";
 	
 	
+}
+
+function updateDropdown() {
+	var artBool = document.getElementById("artist").checked;
+	var albBool = document.getElementById("album").checked;	
+	var lenBool = document.getElementById("length").checked;
+	var dskBool = document.getElementById("disk").checked;
+	var trkBool = document.getElementById("track").checked;
+	var expBool = document.getElementById("explicit").checked;
+	
+	var text = '<option value="none">none</option>';
+	
+	{
+		if (artBool === true) {
+			text += '<option value="artist">Artist</option>';
+		}
+	
+		if (albBool === true) {
+			text += '<option value="album">Album</option>';
+		}
+	
+		if (lenBool === true) {
+			text += '<option value="length">Song Length</option>';
+		}
+	
+		if (expBool === true) {
+			text += '<option value="explicit">Explicit?</option>';
+		}
+	
+		if (trkBool === true) {
+			text += '<option value="track">Track #</option>';
+		}
+	
+		if (dskBool === true) {
+			text += '<option value="explicit">Disk #</option>'
+		}
+	}
+	
+	document.getElementById("sortMenu").innerHTML = text;
 }
