@@ -719,7 +719,7 @@
 	
 	#playlistSpecs {
 		margin-left: 0px;
-		height:      250px;
+		height:      230px;
 		position:    relative;
 		
 		display:         flex;
@@ -729,7 +729,7 @@
 	}
 	#PlaylistStatForm {
 		width:      70%;
-		margin-top: 30px;
+		margin-top: 10px;
 		position:   absolute;
 	}
 	#URLInput {width: 65%;}
@@ -752,12 +752,33 @@
 		color:            #430487;
 	}
 	.formCol {
-		margin-top: 8px;
+		margin-top: 1px;
 		display: 	block;
 	}
 	#col1 {margin-right: 5%;}
 	#col2 {margin-right: 5%;}
-	.topRow { margin-bottom: 10px;}
+	.topRow { margin-bottom: 5px;}
+	.singleWordHolder{
+		margin-top:    -5px;
+		margin-bottom: -15px;
+	}
+	.dropdown {
+		margin-top: -3px;
+		position:   absolute;
+	}
+	#sortText {
+		position: relative;
+		
+		display: inline-block;
+		
+		color: #000000;
+	}
+	#sortMenu {
+		width:    100px;
+		position: relative;
+		
+		display: inline-block;
+	}
 	
 	/* Playlist Output Section */
 	#songOutput {}
@@ -858,7 +879,7 @@
 	
 	#playlistSpecs {
 		margin-left: 0px;
-		height:      250px;
+		height:      265px;
 		position:    relative;
 		
 		display:         flex;
@@ -868,7 +889,7 @@
 	}
 	#PlaylistStatForm {
 		width:      70%;
-		margin-top: 30px;
+		margin-top: 10px;
 		position:   absolute;
 	}
 	#URLInput {width: 65%;}
@@ -898,6 +919,27 @@
 	#col1 {margin-right: 5%;}
 	#col2 {margin-right: 5%;}
 	.topRow {margin-bottom: 10px;}
+	.singleWordHolder{
+		margin-top:    -5px;
+		margin-bottom: -15px;
+	}
+	.dropdown {
+		margin-top: -3px;
+		position:   absolute;
+	}
+	#sortText {
+		position: relative;
+		
+		display: inline-block;
+		
+		color: #000000;
+	}
+	#sortMenu {
+		width:    100px;
+		position: relative;
+		
+		display: inline-block;
+	}
 	
 	/* Playlist output section */
 	#songOutput {}
