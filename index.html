@@ -1,5 +1,6 @@
 <!doctype html>
 
+<!--suppress HtmlFormInputWithoutLabel -->
 <html lang="en-US">
 	
 <head>
@@ -24,15 +25,13 @@
 			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     	<![endif]-->
 </head>
-	
+
 <body>
 <!-- Main Container -->
-	<div class="container">
+	<div class="container" id="fullcontainer">
 
 	<!-- Header -->
-	<header>
-		<h3 class="icontext">Playlist2Print</h3>
-	</header>
+	<header><h3 class="icontext">Playlist2Print</h3></header>
 		
 	<!-- User Information (Description, Playlist specs) -->
 	<section class="vertsect" id="userInfo">
@@ -55,7 +54,7 @@
 			    <!-- Input bar and submit button -->
     			<section class="topbar" id="textButtonRow">
         			<input id="URLInput" placeholder="Playlist URL here" type="url">
-        			<button id="submit" onclick="getInfo();" type="button">Submit</button>
+        			<button id="submit" onclick="makeTable();" type="button">Submit</button>
     			</section>
 				
 				<section class="singleWordHolder">
@@ -64,23 +63,23 @@
 
 				<!-- Attribute buttons -->
 				<section class="formCol" id="col1">
-					<input type="checkbox" class="topRow" id="artist" onclick="updateDropdown()" checked>
+					<input type="checkbox" class="topRow"    id="artist"   onclick="updateDropdown()" checked>
 					<label for="artist">Artist</label><br>
-					<input class="bottomRow" id="explicit" type="checkbox" onclick="updateDropdown()">
+					<input type="checkbox" class="bottomRow" id="explicit" onclick="updateDropdown()">
 					<label for="explicit">Explicit?</label>
 				</section>
 
 				<section class="formCol" id="col2">
-					<input class="topRow" id="album" type="checkbox" onclick="updateDropdown()">
+					<input type="checkbox" class="topRow"    id="album" onclick="updateDropdown()">
 					<label for="album">Album</label><br>
-					<input class="bottomRow" id="track" type="checkbox" onclick="updateDropdown()">
+					<input type="checkbox" class="bottomRow" id="track" onclick="updateDropdown()">
 					<label for="track">Track #</label>
 				</section>
 
 				<section class="formCol" id="col3">
-					<input class="topRow" id="length" type="checkbox" onclick="updateDropdown()">
+					<input type="checkbox" class="topRow"    id="length" onclick="updateDropdown()">
 					<label for="length">Song Length</label><br>
-					<input type="checkbox" class="bottomRow" id="disk" onclick="updateDropdown()">
+					<input type="checkbox" class="bottomRow" id="disk"   onclick="updateDropdown()">
 					<label for="disk">Disk #</label>
 				</section>
 				
@@ -88,7 +87,8 @@
 					<p class="descBody" id="sortText">Sort by:</p>
 					<select class="dropMenu" id="sortMenu">
 						<option value="none">none</option>
-						<option value="Artist">Artist</option>
+						<option value="title">Title</option>
+						<option value="artist">Artist</option>
 					</select>
 				</section>
 
@@ -101,36 +101,20 @@
 	<!-- Output information (Plaintext readout, downloadable files) -->
 	<section class="vertsect" id="songOutput">
 		
-		<section class="docFormat" id="outputHead">
-			<p id="outputHeader"></p>
-			<section class="outColContainer" id="titleCol">
-				
-				<section class="outCol" id="TitleCol">
-				</section>
-				<section class="outCol" id="ArtistCol">
-				</section>
-				<section class="outCol" id="AlbumCol">
-				</section>
-				<section class="outCol" id="LengthCol">
-				</section>
-				<section class="outCol" id="DiskCol">
-				</section>
-				<section class="outCol" id="TrackCol">
-				</section>
-				<section class="outCol" id="ExplicitCol">
-				</section>
-				
-			</section>
+		<section class="docFormat" id="docOutput">
+			<p id="outputHeader" style="margin-left:2%"></p>
+			<p id="outputKey"></p>
+			<section class="outContainer" id="songTable"></section>
 		</section>
-		
+	</section>
+	<section class="vertsect" id="exportSettings">
+		<section class="exportList" id="exportBar"></section>
 	</section>
 	
 	<!-- Footer Section -->
-	<header>
-		<h3 class="icontext">Playlist2Print</h3>
-	</header>
+	<header id="victim"><h3 class="icontext">Playlist2Print</h3></header>
 		
-</div>
+	</div>
 <!-- Main Container Ends -->
 </body>
 	
