@@ -193,24 +193,53 @@ function merge(lArr, rArr, att) {
 	return mergeArr.concat(lArr.slice(lIndex)).concat(rArr.slice(rIndex));
 }
 
+function accessPlaylist() {
+
+    var playlistURL = document.getElementById("URLInput").value;
+    var playlistName = "";
+    var totLen_seconds = 0;
+    var creator = "";
+    var playlist = [];
+
+    if (playlistURL == "https://open.spotify.com/playlist/1yvyZD1Pre71wLHbPMZOpz") {
+    	playlistName   = "TDH Week 5";
+    	creator        = "B";
+   		totLen_seconds = 978;
+   		playlist       = TDH_Week_5;
+    } else if (playlistURL == "https://open.spotify.com/playlist/1YZGWnYZD6gZliYs7mSaTE") {
+   		playlistName   = "Radiohead tries to do math"
+   		creator        = "four-caddit";
+   		totLen_seconds = 480;
+   		playlist       = Radiohead_tries_to_do_math;
+   	}
+
+   	return [playlistName, creator, totLen_seconds, playlist];
+}
+
 function makeTable() {
 	//Access the URL of the playlist being accessed
-	var playlistURL = document.getElementById("URLInput").value;
+	//var playlistURL = document.getElementById("URLInput").value;
 	document.getElementById("fullcontainer").style = "background-color:#ffffff";
 
+	var playlistData   = accessPlaylist()
+	var playlistName   = playlistData[0];
+	var creator        = playlistData[1];
+	var totLen_seconds = playlistData[2];
+	var currPlaylist   = playlistData[3];
+
 	//Initialize data about the playlist to empty values, then store
-	var playlistName = "";
-	var creator = "";
-	var totLen_seconds = 0;
-	if (playlistURL == "https://open.spotify.com/playlist/1yvyZD1Pre71wLHbPMZOpz") {
-		playlistName   = "TDH Week 5";
-		creator        = "B";
-		totLen_seconds = 978;
-	} else if (playlistURL == "https://open.spotify.com/playlist/1YZGWnYZD6gZliYs7mSaTE") {
-		playlistName   = "Radiohead tries to do math"
-		creator        = "four-caddit";
-		totLen_seconds = 480;
-	}
+	//var playlistName = "";
+	//var creator = "";
+	//var totLen_seconds = 0;
+	//if (playlistURL == "https://open.spotify.com/playlist/1yvyZD1Pre71wLHbPMZOpz") {
+	//	playlistName   = "TDH Week 5";
+	//	creator        = "B";
+	//	totLen_seconds = 978;
+	//} else if (playlistURL == "https://open.spotify.com/playlist/1YZGWnYZD6gZliYs7mSaTE") {
+	//	playlistName   = "Radiohead tries to do math"
+	//	creator        = "four-caddit";
+	//	totLen_seconds = 480;
+	//}
 
 	var len_seconds = 0;
 	var len_minutes = 0;
@@ -321,12 +350,12 @@ function makeTable() {
 	document.getElementById("outputKey").innerHTML = keyText;
 
 	//Access the current playlist
-	var currPlaylist;
-	if (playlistName == "TDH Week 5") {
-		currPlaylist = TDH_Week_5;
-	} else if (playlistName == "Radiohead tries to do math") {
-		currPlaylist = Radiohead_tries_to_do_math;
-	}
+	//var currPlaylist;
+	//if (playlistName == "TDH Week 5") {
+	//	currPlaylist = TDH_Week_5;
+	//} else if (playlistName == "Radiohead tries to do math") {
+	//	currPlaylist = Radiohead_tries_to_do_math;
+	//}
 
 	//Access the attribute that the playlist is being sorted by
 	var sort_item = document.getElementById("sortMenu").value;
